@@ -1,0 +1,412 @@
+#canvas {
+	position: absolute;
+	border: 4px double black; /* Параметры границы */
+    padding: 10px;
+    top: 25%;
+    left: 30%;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+}
+
+p{
+	font-size: 50pt;
+	text-align: center;
+	margin: 0;
+}
+
+body{
+	background-image: url("batya_turova.jpg");
+}
+
+#header a{
+	position: absolute;
+	left: 36%;
+	top: 9%;
+	width: 350px;
+	height: 36px;
+	text-decoration:none;
+	display:block;
+	border: 1px double black; 
+	margin: 0;
+	font-size: 22pt;
+	background-color: white;
+	text-decoration-color: black;
+	text-align:center;
+}
+#rules a{
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	width: 150px;
+	height: 36px;
+	text-decoration:none;
+	display:block;
+	border: 1px double black; 
+	margin: 0;
+	font-size: 22pt;
+	background-color: white;
+	text-decoration-color: black;
+	text-align:center;
+}
+
+#rules a:hover{
+	background:#77b7ff;
+}
+
+#about a{
+	position: absolute;
+	left: 75%;
+	top: 50%;
+	width: 150px;
+	height: 36px;
+	text-decoration:none;
+	display:block;
+	border: 1px double black; 
+	margin: 0;
+	font-size: 22pt;
+	background-color: white;
+	text-decoration-color: black;
+	text-align:center;
+}
+
+#about a:hover{
+	background:#77b7ff;
+}
+
+#refresh_button a{
+	position: absolute;
+	left: 41%;
+	top: 100%;
+	width: 200px;
+	height: 36px;
+	text-align:center;
+	text-decoration:none;
+	display:block;
+	border: 1px double black; 
+	margin: 0;
+	font-size: 22pt;
+	background-color: white;
+	text-decoration-color: black;
+
+}
+
+#refresh_button a:hover{
+	background: red;
+}
+#footer {
+	position: absolute;
+	top: 120%;
+	left: -10%;
+	width: 3000px;
+	height: 100px;
+	background-color: black;
+
+}
+
+
+#block1_1 a{
+	position: absolute;
+	width: 94px;
+	height: 95px;
+	top: 26.6%;
+    left: 30.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; 
+}
+
+/*Задание стилей для блока при наведении на него мыши*/
+#buttons a:hover{
+	background:#77b7ff;
+}
+#block1_2 a{
+	position: absolute;
+	width:92px;
+	height: 95px;
+	top: 26.6%;
+    left: 38%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block1_3 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 26.5%;
+    left: 44.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block1_4 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 26.5%;
+    left: 51.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block1_5 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 26.5%;
+    left: 58.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block2_1 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 40.65%;
+    left: 30.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block2_2 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 40.65%;
+    left: 37.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block2_3 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 40.65%;
+    left: 44.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block2_4 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 40.65%;
+    left: 51.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block2_5 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 40.65%;
+    left: 58.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block3_1 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 54.6%;
+    left: 30.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block3_2 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 54.6%;
+    left: 37.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block3_3 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 54.6%;
+    left: 44.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block3_4 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 54.6%;
+    left: 51.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block3_5 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 54.6%;
+    left: 58.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block4_1 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 68.3%;
+    left: 30.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block4_2 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 68.3%;
+    left: 37.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block4_3 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 68.3%;
+    left: 44.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block4_4 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 68.3%;
+    left: 51.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block4_5 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 68.3%;
+    left: 58.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block5_1 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 82%;
+    left: 30.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block5_2 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 82%;
+    left: 37.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block5_3 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 82%;
+    left: 44.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block5_4 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 82%;
+    left: 51.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}
+#block5_5 a{
+	position: absolute;
+	width:94px;
+	height: 95px;
+	top: 82%;
+    left: 58.9%;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	text-align:center;
+	border: 1px double black; /* Параметры границы */
+}

@@ -1,0 +1,298 @@
+ <!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Крестики-нолики</title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		
+	</head>
+<body vlink="black">
+	<canvas id="canvas" width="500" height="500" >its noot supported</canvas>
+	<script>
+		var example = document.getElementById("canvas"),
+			    ctx     = example.getContext('2d');
+		var user = 1;
+		let matrix = [
+ 			 [0, 0, 0, 0, 0],
+ 			 [0, 0, 0, 0, 0],
+	 		 [0, 0, 0, 0, 0],
+	 		 [0, 0, 0, 0, 0],
+	 		 [0, 0, 0, 0, 0]
+			];
+		function cross(x){
+			if (user == 1) {
+				document.getElementById(x).innerHTML = "<p>x</p>";
+				user+=1;
+				matrix[x[1]][x[3]] = 1;
+				if (matrix[0][0]==1 && matrix[1][0]==1 && matrix[2][0]==1 &&matrix[3][0]==1 &&matrix[4][0]==1) { 
+					ctx.beginPath();
+					ctx.moveTo(48, 0);
+					ctx.lineTo(48, 500);
+					ctx.stroke();
+					alert("Win X!");
+					
+				}
+				else if (matrix[0][1]==1 && matrix[1][1]==1 && matrix[2][1]==1 &&matrix[3][1]==1 &&matrix[4][1]==1) {
+					ctx.beginPath();
+					ctx.moveTo(144, 0);
+					ctx.lineTo(144, 500);
+					ctx.stroke();
+					alert("Win X!");
+				}
+				else if (matrix[0][2]==1 && matrix[1][2]==1 && matrix[2][2]==1 &&matrix[3][2]==1 &&matrix[4][2]==1) {
+					ctx.beginPath();
+					ctx.moveTo(245, 0);
+					ctx.lineTo(245, 500);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[0][3]==1 && matrix[1][3]==1 && matrix[2][3]==1 &&matrix[3][3]==1 &&matrix[4][3]==1) {
+					ctx.beginPath();
+					ctx.moveTo(346, 0);
+					ctx.lineTo(346, 500);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[0][4]==1 && matrix[1][4]==1 && matrix[2][4]==1 &&matrix[3][4]==1 &&matrix[4][4]==1) {
+					ctx.beginPath();
+					ctx.moveTo(447, 0);
+					ctx.lineTo(447, 500);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[0][0]==1 && matrix[0][1]==1 && matrix[0][2]==1 &&matrix[0][3]==1 &&matrix[0][4]==1) {
+					ctx.beginPath();
+					ctx.moveTo(0, 48);
+					ctx.lineTo(500, 48);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[1][0]==1 && matrix[1][1]==1 && matrix[1][2]==1 &&matrix[1][3]==1 &&matrix[1][4]==1) {
+					ctx.beginPath();
+					ctx.moveTo(0, 144);
+					ctx.lineTo(500, 144);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[2][0]==1 && matrix[2][1]==1 && matrix[2][2]==1 &&matrix[2][3]==1 &&matrix[2][4]==1) {
+					ctx.beginPath();
+					ctx.moveTo(0, 245);
+					ctx.lineTo(500, 245);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[3][0]==1 && matrix[3][1]==1 && matrix[3][2]==1 &&matrix[3][3]==1 &&matrix[3][4]==1) {
+					ctx.beginPath();
+					ctx.moveTo(0, 346);
+					ctx.lineTo(500, 346);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[4][0]==1 && matrix[4][1]==1 && matrix[4][2]==1 &&matrix[4][3]==1 &&matrix[4][4]==1) {
+					ctx.beginPath();
+					ctx.moveTo(0, 447);
+					ctx.lineTo(500, 447);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[0][0]==1 && matrix[1][1]==1 && matrix[2][2]==1 &&matrix[3][3]==1 &&matrix[4][4]==1) {
+					ctx.beginPath();
+					ctx.moveTo(0, 0);
+					ctx.lineTo(500, 500);
+					ctx.stroke();
+					alert("Win X!");}
+				else if (matrix[0][4]==1 && matrix[1][3]==1 && matrix[2][2]==1 &&matrix[3][1]==1 &&matrix[4][0]==1) {
+					ctx.beginPath();
+					ctx.moveTo(0, 500);
+					ctx.lineTo(500, 0);
+					ctx.stroke();
+					alert("Win X!");}
+
+				
+			}
+			else{
+				document.getElementById(x).innerHTML = "<p>o</p>";
+				user-=1;
+				matrix[x[1]][x[3]] = 2;
+				if (matrix[0][0]==2 && matrix[1][0]==2 && matrix[2][0]==2 &&matrix[3][0]==2 &&matrix[4][0]==2) { 
+					ctx.beginPath();
+					ctx.moveTo(48, 0);
+					ctx.lineTo(48, 500);
+					ctx.stroke();
+					alert("Win O!");
+					
+				}
+				else if (matrix[0][1]==2 && matrix[1][1]==2 && matrix[2][1]==2 &&matrix[3][1]==1 &&matrix[4][1]==1) {
+					ctx.beginPath();
+					ctx.moveTo(144, 0);
+					ctx.lineTo(144, 500);
+					ctx.stroke();
+					alert("Win O!");
+				}
+				else if (matrix[0][2]==2 && matrix[1][2]==2 && matrix[2][2]==2 &&matrix[3][2]==2 &&matrix[4][2]==2) {
+					ctx.beginPath();
+					ctx.moveTo(245, 0);
+					ctx.lineTo(245, 500);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[0][3]==2 && matrix[1][3]==2 && matrix[2][3]==2 &&matrix[3][3]==2 &&matrix[4][3]==2) {
+					ctx.beginPath();
+					ctx.moveTo(346, 0);
+					ctx.lineTo(346, 500);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[0][4]==2 && matrix[1][4]==2 && matrix[2][4]==2 &&matrix[3][4]==2 &&matrix[4][4]==2) {
+					ctx.beginPath();
+					ctx.moveTo(447, 0);
+					ctx.lineTo(447, 500);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[0][0]==2 && matrix[0][1]==2 && matrix[0][2]==2 &&matrix[0][3]==2 &&matrix[0][4]==2) {
+					ctx.beginPath();
+					ctx.moveTo(0, 48);
+					ctx.lineTo(500, 48);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[1][0]==2 && matrix[1][1]==2 && matrix[1][2]==2 &&matrix[1][3]==2 &&matrix[1][4]==2) {
+					ctx.beginPath();
+					ctx.moveTo(0, 144);
+					ctx.lineTo(500, 144);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[2][0]==2 && matrix[2][1]==2 && matrix[2][2]==2 &&matrix[2][3]==2 &&matrix[2][4]==2) {
+					ctx.beginPath();
+					ctx.moveTo(0, 245);
+					ctx.lineTo(500, 245);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[3][0]==2 && matrix[3][1]==2 && matrix[3][2]==2 &&matrix[3][3]==2 &&matrix[3][4]==2) {
+					ctx.beginPath();
+					ctx.moveTo(0, 346);
+					ctx.lineTo(500, 346);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[4][0]==2 && matrix[4][1]==2 && matrix[4][2]==2 &&matrix[4][3]==2 &&matrix[4][4]==2) {
+					ctx.beginPath();
+					ctx.moveTo(0, 447);
+					ctx.lineTo(500, 447);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[0][0]==2 && matrix[1][1]==2 && matrix[2][2]==2 &&matrix[3][3]==2 &&matrix[4][4]==2) {
+					ctx.beginPath();
+					ctx.moveTo(0, 0);
+					ctx.lineTo(500, 500);
+					ctx.stroke();
+					alert("Win O!");}
+				else if (matrix[0][4]==2 && matrix[1][3]==2 && matrix[2][2]==2 &&matrix[3][1]==2 &&matrix[4][0]==2) {
+					ctx.beginPath();
+					ctx.moveTo(0, 500);
+					ctx.lineTo(500, 0);
+					ctx.stroke();
+					alert("Win O!");}
+
+				
+			}
+			
+
+
+		}
+
+		function rules_window(){
+			alert("Основные правила:Игроки по очереди ставят на свободные клетки поля 5х5 знаки (один всегда крестики, другой всегда нолики). Первый, выстроивший в ряд 5 своих фигуры по вертикали, горизонтали или диагонали, выигрывает. Первый ход делает игрок, ставящий крестики.Обычно по завершении партии выигравшая сторона зачёркивает чертой свои пять знаков (нолика или крестика), составляющих сплошной ряд.")
+		}
+		function about_window(){
+			alert("Об игре:Крестики-нолики — логическая игра между двумя противниками на квадратном поле 3 на 3 клетки или большего размера (вплоть до «бесконечного поля»). Один из игроков играет «крестиками», второй — «ноликами».")
+		}
+		
+		
+	</script>
+
+	<div id="header">
+		<a>Крестики-Нолики 5х5</a>
+
+	</div>
+	<div id="rules">
+		<a onclick="rules_window()">Правила</a>
+		
+	</div>
+	<div id="about">
+		<a onclick="about_window()">Об игре</a>
+		
+	</div>
+
+	<div id="buttons">
+		<div id="block1_1">
+			<a id="a0_0" onclick="cross('a0_0')"></a> 
+		</div>
+		<div id="block1_2">
+			<a id="a0_1" onclick="cross('a0_1')"></a> 
+		</div>
+		<div id="block1_3">
+			<a id="a0_2" onclick="cross('a0_2')"></a> 
+		</div>
+		<div id="block1_4">
+			<a id="a0_3" onclick="cross('a0_3')"></a> 
+		</div>
+		<div id="block1_5">
+			<a id="a0_4" onclick="cross('a0_4')"></a> 
+		</div>
+		<div id="block2_1">
+			<a id="a1_0" onclick="cross('a1_0')"></a> 
+		</div>
+		<div id="block2_2">
+			<a id="a1_1" onclick="cross('a1_1')"></a> 
+		</div>
+		<div id="block2_3">
+			<a id="a1_2" onclick="cross('a1_2')"></a> 
+		</div>
+		<div id="block2_4">
+			<a id="a1_3" onclick="cross('a1_3')"></a> 
+		</div>
+		<div id="block2_5">
+			<a id="a1_4" onclick="cross('a1_4')"></a> 
+		</div>
+		<div id="block3_1">
+			<a id="a2_0" onclick="cross('a2_0')"></a> 
+		</div>
+		<div id="block3_2">
+			<a id="a2_1" onclick="cross('a2_1')"></a> 
+		</div>
+		<div id="block3_3">
+			<a id="a2_2" onclick="cross('a2_2')"></a> 
+		</div>
+		<div id="block3_4">
+			<a id="a2_3" onclick="cross('a2_3')"></a> 
+		</div>
+		<div id="block3_5">
+			<a id="a2_4" onclick="cross('a2_4')"></a> 
+		</div>
+		<div id="block4_1">
+			<a id="a3_0" onclick="cross('a3_0')"></a> 
+		</div>
+		<div id="block4_2">
+			<a id="a3_1" onclick="cross('a3_1')"></a> 
+		</div>
+		<div id="block4_3">
+			<a id="a3_2" onclick="cross('a3_2')"></a> 
+		</div>
+		<div id="block4_4">
+			<a id="a3_3" onclick="cross('a3_3')"></a> 
+		</div>
+		<div id="block4_5">
+			<a id="a3_4" onclick="cross('a3_4')"></a> 
+		</div>
+		<div id="block5_1">
+			<a id="a4_0" onclick="cross('a4_0')"></a> 
+		</div>
+		<div id="block5_2">
+			<a id="a4_1" onclick="cross('a4_1')"></a> 
+		</div>
+		<div id="block5_3">
+			<a id="a4_2" onclick="cross('a4_2')"></a> 
+		</div>
+		<div id="block5_4">
+			<a id="a4_3" onclick="cross('a4_3')"></a> 
+		</div>
+		<div id="block5_5">
+			<a id="a4_4" onclick="cross('a4_4')"></a> 
+		</div>
+		
+	</div>
+	<div id="refresh_button">
+			<a href="style.html">Начать заново!</a>
+	</div>
+	<a id="footer">FOOTER</a>
+</body>
+</html>
